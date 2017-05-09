@@ -1,0 +1,120 @@
+body{
+    margin:0px;
+    background-color: #1d1a05;
+}
+.contenedorNav{
+    width: 100%;
+    height: 70px; 
+    display: flex;
+    position: fixed;
+    background-color:#ca3c25;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self:center;
+}
+div nav ul li{
+    display: inline-flex;
+    justify-content: space-between;
+    list-style: none;
+    align-content: center;
+    padding: 25px;
+    margin-left: 50; 
+    font-size: 20px;
+    font-family:sans-serif;
+    
+}
+div nav ul li a:hover{
+    background-color: #E95853;
+    font-size: 20px;
+    color:white;
+}
+div nav ul li a{
+    color:beige;
+}
+
+.barraNav{
+    display: inline-flex;
+    align-items: center;
+    
+}
+.contenedorImagenes{
+    display: inline-flex;
+    margin-top:100px;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+img{
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    align-self: center;
+    
+}
+.close{
+    font-size: 30px;
+    position:absolute;
+    top: 150px;
+    color:crimson;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.cerrar:focus {
+    color: #AAA;
+    text-decoration: none;
+    cursor: pointer;
+}
+#botonesSec{
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    display: inline-flex;
+    padding: 30px;
+    padding-left: 250;
+}
+.boton{
+    display: inline-flex;
+    color:crimson;
+    text-decoration: none;
+    cursor: pointer;
+    background-color:bisque;
+    padding: 30;
+    padding-left: 150px;
+    padding-right: 150px;
+    align-self: center;
+}
+.boton:hover{
+    background-color:#ca3c25;
+    font-size: 20;
+    color:beige;  
+}
+.contenedorParrafos{
+    width: 100%;
+    height: 300px;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.parrafo{
+    width: 500px;
+    height: 260px;
+    display: inline-flex;
+    align-self: center;
+    font-family: helvetica;
+    color:beige;
+    font-size: 17;
+}
+.izquierda{
+    padding-left: 250px;
+    
+}
+.derecha{
+    padding-right: 250px;
+}
+
