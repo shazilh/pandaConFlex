@@ -1,0 +1,51 @@
+/*  -- INICIO GRID --  */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+	display: block;
+}
+
+.templateRow {
+    content: " ";
+    display: table;
+	width: 100%;
+}
+
+.row {
+    &:before{
+        @extend .templateRow;
+    }
+    &:after{
+        @extend .templateRow;
+        clear: both;
+    }
+}
+
+[class*="col-"]{
+    min-height: 7px;
+    padding: 12px;
+    float: left;
+}
+
+@function anchoDeColumnas($num, $cols:12){
+    @return percentage($num / $cols);
+}
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        width: anchoDeColumnas($i);
+    }
+} 
+/*  -- FIN GRID --  */
+
+
+/*  -- INICIO OFFSET --  */
+@function inicioColumna($offeset){
+    @return percentage(($offeset/12));
+}
+@for $offeset from 1 through 12{
+    .offset-#{$offeset}{
+        margin-left: inicioColumna($offeset);
+    }
+}
+/*  -- FIN OFFSET --  */

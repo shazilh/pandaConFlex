@@ -1,0 +1,73 @@
+@import 'variables';
+@import 'grid';
+@import 'mixin';
+@import 'fonts';
+@import 'colors';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $background-color-brown;
+}
+nav{
+    position: fixed;
+    background-color:$color-background-nav;
+}
+/* CSS declarations for .block */
+.list{
+    @include links-title;
+    &__item{
+        @include item;
+        &--a{
+        @include hover-color;
+            &:hover{
+                color:$rosa-hover;
+            }
+        }
+    }
+}
+.imagen{
+    width: $container-width;
+    /*height: $height-container;*/
+    display: inline-block;
+    padding-top: 200px;
+    &__close{
+        font-size: 30px;
+        position:absolute;
+        top: 150px;
+        color:crimson;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover{
+            color: #AAA;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+.botones{
+    @include links-title;
+    &__boton{
+        display: inline-block;
+        color:crimson;
+        text-decoration: none;
+        cursor: pointer;
+        background-color:bisque;
+        padding: 30;
+        padding-left: 100px;
+        padding-right: 100px;
+        align-self: center;
+        &:hover{
+             background-color:#ca3c25;
+            font-size: 20;
+            color:beige; 
+        }
+    }
+}
+.paragraphs{
+    color:beige;
+    font-size: 20px;
+}

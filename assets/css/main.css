@@ -1,120 +1,166 @@
-body{
-    margin:0px;
-    background-color: #1d1a05;
-}
-.contenedorNav{
-    width: 100%;
-    height: 70px; 
-    display: flex;
-    position: fixed;
-    background-color:#ca3c25;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    align-self:center;
-}
-div nav ul li{
-    display: inline-flex;
-    justify-content: space-between;
+/*  -- INICIO GRID --  */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block; }
+
+.templateRow, .row:before, .row:after {
+  content: " ";
+  display: table;
+  width: 100%; }
+
+.row:after {
+  clear: both; }
+
+[class*="col-"] {
+  min-height: 7px;
+  padding: 12px;
+  float: left; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+/*  -- FIN GRID --  */
+/*  -- INICIO OFFSET --  */
+.offset-1 {
+  margin-left: 8.33333%; }
+
+.offset-2 {
+  margin-left: 16.66667%; }
+
+.offset-3 {
+  margin-left: 25%; }
+
+.offset-4 {
+  margin-left: 33.33333%; }
+
+.offset-5 {
+  margin-left: 41.66667%; }
+
+.offset-6 {
+  margin-left: 50%; }
+
+.offset-7 {
+  margin-left: 58.33333%; }
+
+.offset-8 {
+  margin-left: 66.66667%; }
+
+.offset-9 {
+  margin-left: 75%; }
+
+.offset-10 {
+  margin-left: 83.33333%; }
+
+.offset-11 {
+  margin-left: 91.66667%; }
+
+.offset-12 {
+  margin-left: 100%; }
+
+/*  -- FIN OFFSET --  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #1d1a05; }
+
+nav {
+  position: fixed;
+  background-color: #ca3c25; }
+
+/* CSS declarations for .block */
+.list {
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  font-family: "Architects Daughter", cursive; }
+  .list__item {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em;
     list-style: none;
-    align-content: center;
-    padding: 25px;
-    margin-left: 50; 
-    font-size: 20px;
-    font-family:sans-serif;
-    
-}
-div nav ul li a:hover{
-    background-color: #E95853;
-    font-size: 20px;
-    color:white;
-}
-div nav ul li a{
-    color:beige;
-}
+    text-decoration: none; }
+    .list__item--a {
+      color: #ffffe3; }
+      .list__item--a:hover {
+        color: #ca3c25; }
 
-.barraNav{
-    display: inline-flex;
-    align-items: center;
-    
-}
-.contenedorImagenes{
-    display: inline-flex;
-    margin-top:100px;
-    width: 100%;
-    height: 300px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-img{
-    width: 200px;
-    height: 200px;
-    display: inline-flex;
-    align-self: center;
-    
-}
-.close{
+.imagen {
+  width: 100%;
+  /*height: $height-container;*/
+  display: inline-block;
+  padding-top: 200px; }
+  .imagen__close {
     font-size: 30px;
-    position:absolute;
+    position: absolute;
     top: 150px;
-    color:crimson;
+    color: crimson;
     font-weight: bold;
-    transition: 0.3s;
-}
-.cerrar:focus {
-    color: #AAA;
-    text-decoration: none;
-    cursor: pointer;
-}
-#botonesSec{
-    width: 100%;
-    height: 50px;
-    flex-direction: row;
-    align-items: center;
-    display: inline-flex;
-    padding: 30px;
-    padding-left: 250;
-}
-.boton{
-    display: inline-flex;
-    color:crimson;
-    text-decoration: none;
-    cursor: pointer;
-    background-color:bisque;
-    padding: 30;
-    padding-left: 150px;
-    padding-right: 150px;
-    align-self: center;
-}
-.boton:hover{
-    background-color:#ca3c25;
-    font-size: 20;
-    color:beige;  
-}
-.contenedorParrafos{
-    width: 100%;
-    height: 300px;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.parrafo{
-    width: 500px;
-    height: 260px;
-    display: inline-flex;
-    align-self: center;
-    font-family: helvetica;
-    color:beige;
-    font-size: 17;
-}
-.izquierda{
-    padding-left: 250px;
-    
-}
-.derecha{
-    padding-right: 250px;
-}
+    transition: 0.3s; }
+    .imagen__close:hover {
+      color: #AAA;
+      text-decoration: none;
+      cursor: pointer; }
 
+.botones {
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  font-family: "Architects Daughter", cursive; }
+  .botones__boton {
+    display: inline-block;
+    color: crimson;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: bisque;
+    padding: 30;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-self: center; }
+    .botones__boton:hover {
+      background-color: #ca3c25;
+      font-size: 20;
+      color: beige; }
+
+.paragraphs {
+  color: beige;
+  font-size: 20px; }
+
+/*# sourceMappingURL=main.css.map */

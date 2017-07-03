@@ -1,0 +1,16 @@
+@mixin links-title{
+    width: $container-width;
+    height: $list-height; 
+    align-items: $central-aligment;
+    font-family: $font-titles;
+}
+@mixin item{
+    display:inline-block;
+    text-align: $central-aligment;
+    font-size: $font-size;
+    list-style: none;
+    text-decoration: none; 
+}
+@mixin hover-color{
+    color:#ffffe3;
+}

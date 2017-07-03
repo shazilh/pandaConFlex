@@ -1,4 +1,4 @@
-var cerrar = document.getElementsByClassName("close");
+var cerrar = document.getElementsByClassName("imagen__close");
 
 for(var i = 0; i<cerrar.length; i++){
  cerrar[i].addEventListener("click",cerrarImagen)
@@ -25,9 +25,9 @@ var textoDer = document.getElementById("der");
 var btn1=document.getElementById("boton1");
 var btn2=document.getElementById("boton2");
     btn1.addEventListener("click",ocultarDer);
-    btn1.addEventListener("dblclick",mostrarDer);
+    btn1.addEventListener("click",mostrarDer);
     btn2.addEventListener("click",ocultarIzq);
-    btn2.addEventListener("dblclick",mostrarIzq);
+    btn2.addEventListener("click",mostrarIzq);
 
 
 // Función para ocultar elementos
